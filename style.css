@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #157177, #0c085f);
+  padding: 10px;
+}
+
+.todo__app {
+  width: 100%;
+  max-width: 540px;
+  background-color: #fff;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+}
+
+.todo__app h2 {
+  color: #002765;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.todo__app h2 img {
+  width: 30px;
+  margin-left: 10px;
+}
+
+.todo__app--row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #edeef0;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+.todo__app--row input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent; /*nền trong suốt*/
+  padding: 10px;
+  font-weight: 14px;
+}
+
+.todo__app--row button {
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: #ff5945;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+.todo__app ul li {
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none; /*Không cho phép chọn văn bản. */
+  cursor: pointer;
+  position: relative;
+  overflow: hidden; /* Ẩn phần bị tràn */
+}
+
+.todo__app ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(images/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+
+.todo__app ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+
+.todo__app ul li.checked::before {
+  background-image: url(images/checked.png);
+}
+
+.todo__app ul li span {
+  position: absolute;
+  right: 0px;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+.todo__app ul li span:hover {
+  background-color: #edeef0;
+}
+
+/* Responsive Mobile (màn hình nhỏ hơn 600px) */
+@media screen and (max-width: 600px) {
+  .todo__app {
+    width: 90%; /* Giảm kích thước để vừa với màn hình */
+    padding: 30px 20px 50px;
+  }
+
+  .todo__app h2 {
+    font-size: 20px; /* Thu nhỏ tiêu đề */
+  }
+
+  .todo__app--row {
+    flex-direction: column; /* Xếp input và button theo cột */
+    padding: 10px;
+  }
+
+  .todo__app--row input {
+    width: 100%;
+    margin-bottom: 10px; /* Thêm khoảng cách giữa input và button */
+    padding: 12px;
+  }
+
+  .todo__app--row button {
+    width: 100%; /* Nút chiếm toàn bộ chiều rộng */
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .todo__app ul li {
+    font-size: 15px; /* Thu nhỏ text */
+    padding: 12px 8px 12px 40px; /* Điều chỉnh padding */
+  }
+
+  .todo__app ul li::before {
+    width: 24px;
+    height: 24px; /* Thu nhỏ icon */
+    top: 12px;
+    left: 5px;
+  }
+
+  .todo__app ul li span {
+    width: 30px;
+    height: 30px; /* Thu nhỏ nút xóa */
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
