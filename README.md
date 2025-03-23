@@ -17,9 +17,11 @@ To-Do List App là một ứng dụng quản lý công việc đơn giản giúp
 ## 📷 Hình ảnh giao diện
 
 1. Desktop:
+   
 ![image](https://github.com/user-attachments/assets/7482ce7a-1e0b-4eab-a5ec-44dbd7bb8b8e)
 
 2. Mobile:
+
 ![image](https://github.com/user-attachments/assets/3ad5e6d2-3048-4935-99ce-9d63c46606b5)
 
 🚀 Demo
