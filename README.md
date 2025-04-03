@@ -25,4 +25,4 @@ To-Do List App là một ứng dụng quản lý công việc đơn giản giúp
 ![image](https://github.com/user-attachments/assets/3ad5e6d2-3048-4935-99ce-9d63c46606b5)
 
 🚀 Demo
-- Link: https://lqduygit.github.io/todolistapp/
+- Link: https://lqduygit.github.io/to-do-list-app/
