@@ -3,7 +3,7 @@
 ## 📌 Giới thiệu
 To-Do List App là một ứng dụng quản lý công việc đơn giản giúp bạn ghi chú các nhiệm vụ cần làm. Ứng dụng hỗ trợ thêm, đánh dấu hoàn thành và xóa công việc.
 
-Mình đang học và làm quen với JavaScript, tất cả code trong này được mình làm lại từ youtube, đã thêm một vài thứ theo ý riêng của mình dành cho ngày thống nhất đất nước 
+Mình đang học và làm quen với JavaScript, tất cả code trong này được mình làm lại từ youtube, đã thêm một vài thứ theo ý riêng của mình
 
 Link youtube: https://www.youtube.com/@GreatStackDev
 
